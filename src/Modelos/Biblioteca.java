@@ -1,17 +1,17 @@
 package Modelos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
     private List<Libro> libros;
     private List<Revista> revistas;
 
-    public Biblioteca(List<Libro> libros, List<Revista> revistas) {
-        this.libros = libros;
-        this.revistas = revistas;
+    public Biblioteca() {
+        this.libros = new ArrayList<>();
+        this.revistas = new ArrayList<>();
     }
 
-    // Getters y Setters
     public List<Libro> getLibros() {
         return libros;
     }

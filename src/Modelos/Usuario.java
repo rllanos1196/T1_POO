@@ -5,24 +5,22 @@ import java.util.List;
 
 public class Usuario {
     private String nombre;
-    private List<Libro> librosDisponibles;
-    private List<Libro> librosFavoritos;
 
+    private List<Libro> librosFavoritos;
+    private List<Revista> revistasFavoritas;
     public Usuario(String nombre) {
         this.nombre = nombre;
-        this.librosDisponibles = new ArrayList<>();
         this.librosFavoritos = new ArrayList<>();
+        this.revistasFavoritas = new ArrayList<>();
     }
 
     // Getters
     public String getNombre() {
         return nombre;
     }
-
-    public List<Libro> getLibrosDisponibles() {
-        return librosDisponibles;
+    public List<Revista> getRevistasFavoritas() {
+        return revistasFavoritas;
     }
-
     public List<Libro> getLibrosFavoritos() {
         return librosFavoritos;
     }
@@ -32,11 +30,11 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public void setLibrosDisponibles(List<Libro> librosDisponibles) {
-        this.librosDisponibles = librosDisponibles;
-    }
-
     public void setLibrosFavoritos(List<Libro> librosFavoritos) {
         this.librosFavoritos = librosFavoritos;
+    }
+
+    public void setRevistasFavoritas(List<Revista> revistasFavoritas) {
+        this.revistasFavoritas = revistasFavoritas;
     }
 }

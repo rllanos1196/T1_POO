@@ -20,8 +20,9 @@ public class BibliotecaProceso {
         }
 
         public static int contarFavoritos(Usuario usuario) {
-            if (usuario.getLibrosFavoritos() == null) return 0;
-            return usuario.getLibrosFavoritos().size();
+            int totalLibros = (usuario.getLibrosFavoritos() != null) ? usuario.getLibrosFavoritos().size() : 0;
+            int totalRevistas = (usuario.getRevistasFavoritas() != null) ? usuario.getRevistasFavoritas().size() : 0;
+            return totalLibros + totalRevistas;
         }
     }
 }
