@@ -1,7 +1,7 @@
 package Procesos.Ejercicio1;
 
-import Modelos.Libro;
-import Modelos.Usuario;
+import Modelos.Biblioteca.Libro;
+import Modelos.Biblioteca.Usuario;
 
 import java.util.List;
 

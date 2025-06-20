@@ -1,9 +1,9 @@
 package Procesos.Ejercicio1;
 
-import Modelos.Biblioteca;
-import Modelos.Libro;
-import Modelos.Revista;
-import Modelos.Usuario;
+import Modelos.Biblioteca.Biblioteca;
+import Modelos.Biblioteca.Libro;
+import Modelos.Biblioteca.Revista;
+import Modelos.Biblioteca.Usuario;
 
 import java.util.ArrayList;
 import java.util.List;

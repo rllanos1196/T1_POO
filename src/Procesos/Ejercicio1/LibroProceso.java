@@ -1,6 +1,6 @@
 package Procesos.Ejercicio1;
 
-import Modelos.Libro;
+import Modelos.Biblioteca.Libro;
 
 import java.util.Random;
 

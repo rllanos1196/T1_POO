@@ -1,17 +1,16 @@
 package Procesos.Ejercicio1;
 
-import Modelos.Biblioteca;
-import Modelos.Libro;
-import Modelos.Revista;
-import Modelos.Usuario;
+import Modelos.Biblioteca.Biblioteca;
+import Modelos.Biblioteca.Libro;
+import Modelos.Biblioteca.Revista;
+import Modelos.Biblioteca.Usuario;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class AppBiblioteca {
-    public static void main(String[] args) {
+    public static void iniciarBiblioteca() {
         Scanner scanner = new Scanner(System.in);
 
         // Crear biblioteca general con libros y revistas cargados

@@ -1,6 +1,6 @@
-package Modelos;
+package Modelos.Biblioteca;
 
-public class Revista extends Publicacion{
+public class Revista extends Publicacion {
     private int numeroEdicion;
 
     public Revista(String titulo, String autor, int anio, String codigoISBN, int numeroEdicion) {
