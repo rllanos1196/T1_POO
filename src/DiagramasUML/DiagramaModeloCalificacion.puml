@@ -1,0 +1,52 @@
+@startuml
+class Modelos.Persona {
+- String nombre
+- String dni
++ String getNombre()
++ void setNombre(String)
++ String getDni()
++ void setDni(String)
+}
+
+class Modelos.Curso {
+- String nombreCurso
+- List<Alumno> alumnos
+- {static} int contadorCursos
+- {static} int contadorAlumnos
++ void agregarAlumno(Alumno)
++ List<Alumno> getAlumnos()
++ {static} int getContadorCursos()
++ {static} int getContadorAlumnos()
++ String getNombreCurso()
+}
+
+
+class Modelos.Curso$Asistencia {
+- Map<Alumno,Boolean> asistenciaMap
++ void registrarAsistencia(Alumno,boolean)
++ Boolean getAsistencia(Alumno)
+}
+
+class Modelos.Profesor {
+- ArrayList<Alumno> alumnosAsignados
++ ArrayList<Alumno> getAlumnosAsignados()
++ void setAlumnosAsignados(ArrayList<Alumno>)
++ void registrarAlumno(Alumno)
+}
+
+
+class Modelos.Alumno {
+- List<Double> calificaciones
++ void agregarNota(double)
++ void agregarNota(double[])
++ double calcularPromedio()
++ List<Double> getCalificaciones()
+}
+
+
+
+
+Modelos.Curso +.. Modelos.Curso$Asistencia
+Modelos.Persona <|-- Modelos.Profesor
+Modelos.Persona <|-- Modelos.Alumno
+@enduml

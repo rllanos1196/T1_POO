@@ -1,0 +1,61 @@
+@startuml
+class Modelos.Usuario {
+- String nombre
+- List<Libro> librosFavoritos
+- List<Revista> revistasFavoritas
++ String getNombre()
++ List<Revista> getRevistasFavoritas()
++ List<Libro> getLibrosFavoritos()
++ void setNombre(String)
++ void setLibrosFavoritos(List<Libro>)
++ void setRevistasFavoritas(List<Revista>)
+}
+
+
+class Modelos.Biblioteca {
+- List<Libro> libros
+- List<Revista> revistas
++ List<Libro> getLibros()
++ void setLibros(List<Libro>)
++ List<Revista> getRevistas()
++ void setRevistas(List<Revista>)
+}
+
+
+class Modelos.Revista {
+- int numeroEdicion
++ int getNumeroEdicion()
++ void setNumeroEdicion(int)
+}
+
+
+class Modelos.Libro {
+- int paginas
++ int getPaginas()
++ void setPaginas(int)
++ int calcularPalabrasEstimadas()
++ int calcularPalabrasEstimadas(int,int)
+}
+
+
+abstract class Modelos.Publicacion {
+- String titulo
+- String autor
+- int anio
+- String codigoISBN
++ String getTitulo()
++ String getAutor()
++ int getAnio()
++ String getCodigoISBN()
++ void setTitulo(String)
++ void setAutor(String)
++ void setAnio(int)
++ void setCodigoISBN(String)
+}
+
+
+
+
+Modelos.Publicacion <|-- Modelos.Revista
+Modelos.Publicacion <|-- Modelos.Libro
+@enduml

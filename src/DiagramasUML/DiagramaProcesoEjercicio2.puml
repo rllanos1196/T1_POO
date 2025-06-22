@@ -1,0 +1,24 @@
+@startuml
+class Procesos.Ejercicio2.Reporte {
++ {static} double calcularPromedioGeneral(Curso)
++ {static} int contarAprobados(Curso)
+}
+
+class Procesos.Ejercicio2.AppCalificacion {
+- {static} List<Curso> cursos
+- {static} List<Alumno> alumnos
+- {static} Profesor profesor
++ {static} void iniciarCalificaciones()
+- {static} void generarCursos()
+- {static} void generarAlumnos()
+- {static} void asignarAlumnosACursos()
+- {static} void simularNotas()
+- {static} void mostrarCursosYAlumnos()
+- {static} void mostrarPromedios()
+- {static} void mostrarReportesPorCurso()
+- {static} void registrarAsistencia(Scanner)
+- {static} void mostrarResumen()
+}
+
+
+@enduml
