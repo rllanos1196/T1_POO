@@ -19,7 +19,7 @@ public class AppBiblioteca {
         biblioteca.getRevistas().addAll(generarRevistasDePrueba());
         mostrarPublicacionesDisponibles(biblioteca);
 
-        // Crear usuario (sin publicaciones asignadas)
+        // Crear usuario (sin Publicaciones Asignadas)
         Usuario usuario = new Usuario("Carlos");
 
         int opcion;
